@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Weather Log</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/QActions_images/temperture.svg</normaloff>:/QActions_images/temperture.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionView_1"/>
+    <addaction name="actionVIew_3"/>
+    <addaction name="separator"/>
+    <addaction name="actionRefrashe"/>
+   </widget>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionView_1"/>
+   <addaction name="actionVIew_3"/>
+   <addaction name="separator"/>
+   <addaction name="actionRefrashe"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionView_1">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/QActions_images/temperture.svg</normaloff>:/QActions_images/temperture.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Temperature</string>
+   </property>
+  </action>
+  <action name="actionVIew_3">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/QActions_images/gear.svg</normaloff>:/QActions_images/gear.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionRefrashe">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/QActions_images/refresh.svg</normaloff>:/QActions_images/refresh.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
